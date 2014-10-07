@@ -1,0 +1,29 @@
+// Rotate (Rotate Clockwise)
+@keyframes #{$prefix}kf-rotate {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(359deg); }
+}
+.#{$prefix}anim-rotate, .#{$prefix}anim-rotate-c {
+  animation: #{$prefix}kf-rotate #{$anim-default-speed} infinite linear;
+}
+// End Rotate (Rotate Clockwise)
+
+
+// Rotate Anti-Clockwise
+@keyframes #{$prefix}kf-rotate-ac {
+  0% { transform: rotate(359deg); }
+  100% { transform: rotate(0deg); }
+}
+.#{$prefix}anim-rotate-ac {
+  animation: #{$prefix}kf-rotate-ac #{$anim-default-speed} infinite linear;
+}
+// End Rotate Anti-Clockwise
+
+
+// Set the rotate origin, the default is the center
+[class*='#{$prefix}anim-rotate'] {
+  &.origin-tl { transform-origin: 0% 0%;     }
+  &.origin-tr { transform-origin: 0% 100%;   }
+  &.origin-bl { transform-origin: 100% 0%;   }
+  &.origin-br { transform-origin: 100% 100%; }
+}

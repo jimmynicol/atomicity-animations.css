@@ -1,0 +1,54 @@
+// FadeIn
+@keyframes #{$prefix}kf-fadein {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+.#{$prefix}anim-fadein {
+  animation: #{$prefix}kf-fadein #{$anim-default-speed} #{$anim-easing};
+}
+// End FadeIn
+
+
+// FadeOut
+@keyframes #{$prefix}kf-fadeout {
+  0%   { opacity: 1; }
+  100% { opacity: 0; }
+}
+.#{$prefix}anim-fadeout {
+  animation: #{$prefix}kf-fadeout #{$anim-default-speed} #{$anim-easing};
+}
+// End FadeOut
+
+
+// FadeInUp
+@keyframes #{$prefix}kf-fadeinup {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.#{$prefix}anim-fadeinup {
+  animation: #{$prefix}kf-fadeinup #{$anim-default-speed} #{$anim-easing};
+}
+// End FadeInUp
+
+
+// FadeInDown
+@keyframes #{$prefix}kf-fadeindown {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.#{$prefix}anim-fadeindown {
+  animation: #{$prefix}kf-fadeindown #{$anim-default-speed} #{$anim-easing};
+}
+// End FadeInUp

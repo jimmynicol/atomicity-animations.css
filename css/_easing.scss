@@ -1,0 +1,189 @@
+// Add modifiers to change the animation timing function
+//  - to see a visualization of all the easings: http://easings.net/
+[class*='#{$prefix}anim'] {
+  &.linear {
+    animation-timing-function: linear;
+  }
+  &.ease {
+    animation-timing-function: ease;
+  }
+  &.ease-in {
+    animation-timing-function: ease-in;
+  }
+  &.ease-out {
+    animation-timing-function: ease-out;
+  }
+  &.ease-in-out {
+    animation-timing-function: ease-in-out;
+  }
+
+  &.ease-in-quad {
+    animation-timing-function: cubic-bezier(0.550, 0.085, 0.680, 0.530);
+  }
+  &.ease-in-cubic {
+    animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
+  }
+  &.ease-in-quart {
+    animation-timing-function: cubic-bezier(0.895, 0.030, 0.685, 0.220);
+  }
+  &.ease-in-quint {
+    animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+  }
+  &.ease-in-sine {
+    animation-timing-function: cubic-bezier(0.470, 0.000, 0.745, 0.715);
+  }
+  &.ease-in-expo {
+    animation-timing-function: cubic-bezier(0.950, 0.050, 0.795, 0.035);
+  }
+  &.ease-in-circ {
+    animation-timing-function: cubic-bezier(0.600, 0.040, 0.980, 0.335);
+  }
+  &.ease-in-back {
+    animation-timing-function: cubic-bezier(0.600, -0.280, 0.735, 0.045);
+  }
+
+  &.ease-out-quad {
+    animation-timing-function: cubic-bezier(0.250, 0.460, 0.450, 0.940);
+  }
+  &.ease-out-cubic {
+    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  }
+  &.ease-out-quart {
+    animation-timing-function: cubic-bezier(0.165, 0.840, 0.440, 1.000);
+  }
+  &.ease-out-quint {
+    animation-timing-function: cubic-bezier(0.230, 1.000, 0.320, 1.000);
+  }
+  &.ease-out-sine {
+    animation-timing-function: cubic-bezier(0.390, 0.575, 0.565, 1.000);
+  }
+  &.ease-out-expo {
+    animation-timing-function: cubic-bezier(0.190, 1.000, 0.220, 1.000);
+  }
+  &.ease-out-circ {
+    animation-timing-function: cubic-bezier(0.075, 0.820, 0.165, 1.000);
+  }
+  &.ease-out-back {
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1.275);
+  }
+
+  &.ease-in-out-quad {
+    animation-timing-function: cubic-bezier(0.455, 0.030, 0.515, 0.955);
+  }
+  &.ease-in-out-cubic {
+    animation-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1.00);
+  }
+  &.ease-in-out-quart {
+    animation-timing-function: cubic-bezier(0.770, 0.000, 0.175, 1.000);
+  }
+  &.ease-in-out-quint {
+    animation-timing-function: cubic-bezier(0.860, 0.000, 0.070, 1.000);
+  }
+  &.ease-in-out-sine {
+    animation-timing-function: cubic-bezier(0.445, 0.050, 0.550, 0.950);
+  }
+  &.ease-in-out-expo {
+    animation-timing-function: cubic-bezier(1.000, 0.000, 0.000, 1.000);
+  }
+  &.ease-in-out-circ {
+    animation-timing-function: cubic-bezier(0.785, 0.135, 0.150, 0.860);
+  }
+  &.ease-in-out-back {
+    animation-timing-function: cubic-bezier(0.680, -0.550, 0.265, 1.550);
+  }
+}
+
+
+// Add modifiers to change the transition timing function
+[class*='#{$prefix}trans'] {
+  &.linear {
+    transition-timing-function: linear;
+  }
+  &.ease {
+    transition-timing-function: ease;
+  }
+  &.ease-in {
+    transition-timing-function: ease-in;
+  }
+  &.ease-out {
+    transition-timing-function: ease-out;
+  }
+  &.ease-in-out {
+    transition-timing-function: ease-in-out;
+  }
+
+  &.ease-in-quad {
+    transition-timing-function: cubic-bezier(0.550, 0.085, 0.680, 0.530);
+  }
+  &.ease-in-cubic {
+    transition-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
+  }
+  &.ease-in-quart {
+    transition-timing-function: cubic-bezier(0.895, 0.030, 0.685, 0.220);
+  }
+  &.ease-in-quint {
+    transition-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+  }
+  &.ease-in-sine {
+    transition-timing-function: cubic-bezier(0.470, 0.000, 0.745, 0.715);
+  }
+  &.ease-in-expo {
+    transition-timing-function: cubic-bezier(0.950, 0.050, 0.795, 0.035);
+  }
+  &.ease-in-circ {
+    transition-timing-function: cubic-bezier(0.600, 0.040, 0.980, 0.335);
+  }
+  &.ease-in-back {
+    transition-timing-function: cubic-bezier(0.600, -0.280, 0.735, 0.045);
+  }
+
+  &.ease-out-quad {
+    transition-timing-function: cubic-bezier(0.250, 0.460, 0.450, 0.940);
+  }
+  &.ease-out-cubic {
+    transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  }
+  &.ease-out-quart {
+    transition-timing-function: cubic-bezier(0.165, 0.840, 0.440, 1.000);
+  }
+  &.ease-out-quint {
+    transition-timing-function: cubic-bezier(0.230, 1.000, 0.320, 1.000);
+  }
+  &.ease-out-sine {
+    transition-timing-function: cubic-bezier(0.390, 0.575, 0.565, 1.000);
+  }
+  &.ease-out-expo {
+    transition-timing-function: cubic-bezier(0.190, 1.000, 0.220, 1.000);
+  }
+  &.ease-out-circ {
+    transition-timing-function: cubic-bezier(0.075, 0.820, 0.165, 1.000);
+  }
+  &.ease-out-back {
+    transition-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1.275);
+  }
+
+  &.ease-in-out-quad {
+    transition-timing-function: cubic-bezier(0.455, 0.030, 0.515, 0.955);
+  }
+  &.ease-in-out-cubic {
+    transition-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1.00);
+  }
+  &.ease-in-out-quart {
+    transition-timing-function: cubic-bezier(0.770, 0.000, 0.175, 1.000);
+  }
+  &.ease-in-out-quint {
+    transition-timing-function: cubic-bezier(0.860, 0.000, 0.070, 1.000);
+  }
+  &.ease-in-out-sine {
+    transition-timing-function: cubic-bezier(0.445, 0.050, 0.550, 0.950);
+  }
+  &.ease-in-out-expo {
+    transition-timing-function: cubic-bezier(1.000, 0.000, 0.000, 1.000);
+  }
+  &.ease-in-out-circ {
+    transition-timing-function: cubic-bezier(0.785, 0.135, 0.150, 0.860);
+  }
+  &.ease-in-out-back {
+    transition-timing-function: cubic-bezier(0.680, -0.550, 0.265, 1.550);
+  }
+}

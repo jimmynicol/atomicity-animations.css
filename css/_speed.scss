@@ -1,0 +1,15 @@
+[class*='#{$prefix}anim'] {
+  &.anim-xslow   { animation-duration: $anim-xslow;  }
+  &.anim-slow    { animation-duration: $anim-slow;   }
+  &.anim-medium  { animation-duration: $anim-medium; }
+  &.anim-fast    { animation-duration: $anim-fast;   }
+  &.anim-xfast   { animation-duration: $anim-xfast;  }
+}
+
+[class*='#{$prefix}trans'] {
+  &.trans-xslow  { transition-duration: $anim-xslow;  }
+  &.trans-slow   { transition-duration: $anim-slow;   }
+  &.trans-medium { transition-duration: $anim-medium; }
+  &.trans-fast   { transition-duration: $anim-fast;   }
+  &.trans-xfast  { transition-duration: $anim-xfast;  }
+}

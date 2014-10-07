@@ -1,0 +1,18 @@
+// General
+$prefix:      'a-'        !default;
+// End General
+
+// Animation Speeds
+$anim-xslow:  1500ms      !default;
+$anim-slow:   1000ms      !default;
+$anim-medium: 750ms       !default;
+$anim-fast:   300ms       !default;
+$anim-xfast:  150ms       !default;
+
+$anim-default-speed: $anim-medium;
+// End Animation Speeds
+
+
+// Default Easing
+$anim-easing: ease-in-out !default;
+// End Default Easing

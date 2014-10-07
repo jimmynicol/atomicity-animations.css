@@ -1,0 +1,62 @@
+// FlipIn X
+@keyframes #{$prefix}kf-flipin-x {
+  0% { transform: perspective(400px) rotateX(90deg); }
+  40% { transform: perspective(400px) rotateX(-10deg); }
+  70% { transform: perspective(400px) rotateX(10deg); }
+  100% { transform: perspective(400px) rotateX(0deg); }
+}
+.#{$prefix}anim-flipin-x {
+  backface-visibility: visible !important;
+  animation-name: #{$prefix}kf-flipin-x;
+  animation-timing-function: $anim-easing;
+  animation-fill-mode: both;
+  animation-duration: $anim-default-speed;
+}
+// End FlipIn X
+
+
+// FlipOut X
+@keyframes #{$prefix}kf-flipout-x {
+  0% { transform: perspective(400px) rotateX(0deg); }
+  100% { transform: perspective(400px) rotateX(90deg); }
+}
+.#{$prefix}anim-flipout-x {
+  backface-visibility: visible !important;
+  animation-name: #{$prefix}kf-flipout-x;
+  animation-timing-function: $anim-easing;
+  animation-fill-mode: both;
+  animation-duration: $anim-default-speed;
+}
+// End FlipOut X
+
+
+// FlipIn Y
+@keyframes #{$prefix}kf-flipin-y {
+  0% { transform: perspective(400px) rotateY(90deg); }
+  40% { transform: perspective(400px) rotateY(-10deg); }
+  70% { transform: perspective(400px) rotateY(10deg); }
+  100% { transform: perspective(400px) rotateY(0deg); }
+}
+.#{$prefix}anim-flipin-y {
+  backface-visibility: visible !important;
+  animation-name: #{$prefix}kf-flipin-y;
+  animation-timing-function: $anim-easing;
+  animation-fill-mode: both;
+  animation-duration: $anim-default-speed;
+}
+// End FlipIn Y
+
+
+// FlipOut Y
+@keyframes #{$prefix}kf-flipout-y {
+  0% { transform: perspective(400px) rotateY(0deg); }
+  100% { transform: perspective(400px) rotateY(90deg); }
+}
+.#{$prefix}anim-flipout-y {
+  backface-visibility: visible !important;
+  animation-name: #{$prefix}kf-flipout-y;
+  animation-timing-function: $anim-easing;
+  animation-fill-mode: both;
+  animation-duration: $anim-default-speed;
+}
+// End FlipOut Y

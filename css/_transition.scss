@@ -1,0 +1,10 @@
+.#{$prefix}trans {
+  transition-timing-function: $anim-easing;
+  transition-duration: $anim-default-speed;
+
+  &.all       { transition-property: all                      }
+  &.font      { transition-property: font, color              }
+  &.layout    { transition-property: height, width            }
+  &.position  { transition-property: top, left, bottom, right }
+  &.transform { transition-property: transform                }
+}
