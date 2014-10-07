@@ -23,7 +23,7 @@
 // Set the rotate origin, the default is the center
 [class*='#{$prefix}anim-rotate'] {
   &.origin-tl { transform-origin: 0% 0%;     }
-  &.origin-tr { transform-origin: 0% 100%;   }
-  &.origin-bl { transform-origin: 100% 0%;   }
+  &.origin-tr { transform-origin: 100% 0%;   }
+  &.origin-bl { transform-origin: 0% 100%;   }
   &.origin-br { transform-origin: 100% 100%; }
 }
