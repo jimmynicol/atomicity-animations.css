@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Atomicity Animations</title>
+  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,400,400italic,500,500italic,700,700italic,900,900italic|Roboto+Condensed:700,700italic,400,400italic,300,300italic|Roboto+Slab:100,300,400,700">
+  <link rel="stylesheet" href="dist/atomicity.css">
+
+</head>
+<body>
+  <div class="a-page-container">
+  <div class="a-grid-row a-flex">
+    <div class="a-grid-4of12 a-bg-xlight-o-light a-flex-self-stretch">
+      <ul>
+        <li><a href="#rotate">Rotate</a></li>
+        <li><a href="#easing">Easing</a></li>
+      </ul>
+    </div>
+    <div class="a-grid-8of12 a-p-large a-flex-self-stretch a-fc-black">
+      <h1>Atomicity Animations</h1>
+
+
+      <h3 id="rotate">Rotate</h3>
+
+      <h4>Clockwise (.a-anim-rotate)</h4>
+      <div class="a-fs-small a-m-y-xlarge a-clearfix">
+        <div class="a-fl a-m-r-small">
+          <div class="a-anim-rotate anim-xslow a-bg-primary a-ilb a-p-small"></div>
+          <p>.anim-xslow</p>
+        </div>
+        <div class="a-fl a-m-r-small">
+          <div class="a-anim-rotate anim-slow a-bg-primary a-ilb a-p-small"></div>
+          <p>.anim-slow</p>
+        </div>
+        <div class="a-fl a-m-r-small">
+          <div class="a-anim-rotate anim-medium a-bg-primary a-ilb a-p-small"></div>
+          <p>.anim-medium</p>
+        </div>
+        <div class="a-fl a-m-r-small">
+          <div class="a-anim-rotate anim-fast a-bg-primary a-ilb a-p-small"></div>
+          <p>.anim-fast</p>
+        </div>
+        <div class="a-fl a-m-r-small">
+          <div class="a-anim-rotate anim-xfast a-bg-primary a-ilb a-p-small"></div>
+          <p>.anim-xfast</p>
+        </div>
+      </div>
+
+      <h4>Anti-Clockwise (.a-anim-rotate-c)</h4>
+      <div class="a-fs-small a-m-y-xlarge a-clearfix">
+        <div class="a-fl a-m-r-small">
+          <div class="a-anim-rotate-ac anim-xslow a-bg-swatchone a-ilb a-p-small"></div>
+          <p>.anim-xslow</p>
+        </div>
+      </div>
+
+      <h4>Origins</h4>
+      <div class="a-fs-small a-m-y-xlarge a-clearfix">
+        <div class="a-fl a-m-r-small">
+          <div class="a-anim-rotate origin-tl anim-xslow a-bg-swatchtwo a-ilb a-p-small"></div>
+          <p>.origin-tl</p>
+        </div>
+        <div class="a-fl a-m-r-small">
+          <div class="a-anim-rotate origin-tr anim-xslow a-bg-swatchtwo a-ilb a-p-small"></div>
+          <p>.origin-tr</p>
+        </div>
+        <div class="a-fl a-m-r-small">
+          <div class="a-anim-rotate origin-bl anim-xslow a-bg-swatchtwo a-ilb a-p-small"></div>
+          <p>.origin-bl</p>
+        </div>
+        <div class="a-fl a-m-r-small">
+          <div class="a-anim-rotate origin-br anim-xslow a-bg-swatchtwo a-ilb a-p-small"></div>
+          <p>.origin-br</p>
+        </div>
+      </div>
+
+      <div class="a-hr a-m-b-large"></div>
+
+      <h3 id="easing">Easing</h3>
+
+      <div class="a-fs-small">
+        <h4>Standard Easing</h4>
+        <div class="js-easings">
+          <div class="a-trans position linear a-pos-rel">Linear</div>
+          <div class="a-trans position ease a-pos-rel">Ease</div>
+          <div class="a-trans position ease-in a-pos-rel">Ease In</div>
+          <div class="a-trans position ease-out a-pos-rel">Ease Out</div>
+          <div class="a-trans position ease-in-out a-pos-rel">Ease In Out</div>
+        </div>
+
+        <h4 class="a-m-t-large">Advanced Easing</h4>
+        <div class="js-easings">
+          <div class="a-trans position ease-in-quad a-pos-rel">Ease In Quad</div>
+          <div class="a-trans position ease-in-cubic a-pos-rel">Ease In Cubic</div>
+          <div class="a-trans position ease-in-quart a-pos-rel">Ease In Quart</div>
+          <div class="a-trans position ease-in-quint a-pos-rel">Ease In Quint</div>
+          <div class="a-trans position ease-in-sine a-pos-rel">Ease In Sine</div>
+          <div class="a-trans position ease-in-expo a-pos-rel">Ease In Expo</div>
+          <div class="a-trans position ease-in-circ a-pos-rel">Ease In Circ</div>
+          <div class="a-trans position ease-in-back a-pos-rel">Ease In Back</div>
+        </div>
+        <div class="js-easings a-m-t-small">
+          <div class="a-trans position ease-out-quad a-pos-rel">Ease Out Quad</div>
+          <div class="a-trans position ease-out-cubic a-pos-rel">Ease Out Cubic</div>
+          <div class="a-trans position ease-out-quart a-pos-rel">Ease Out Quart</div>
+          <div class="a-trans position ease-out-quint a-pos-rel">Ease Out Quint</div>
+          <div class="a-trans position ease-out-sine a-pos-rel">Ease Out Sine</div>
+          <div class="a-trans position ease-out-expo a-pos-rel">Ease Out Expo</div>
+          <div class="a-trans position ease-out-circ a-pos-rel">Ease Out Circ</div>
+          <div class="a-trans position ease-out-back a-pos-rel">Ease Out Back</div>
+        </div>
+        <div class="js-easings a-m-t-small">
+          <div class="a-trans position ease-in-out-quad a-pos-rel">Ease In Out Quad</div>
+          <div class="a-trans position ease-in-out-cubic a-pos-rel">Ease In Out Cubic</div>
+          <div class="a-trans position ease-in-out-quart a-pos-rel">Ease In Out Quart</div>
+          <div class="a-trans position ease-in-out-quint a-pos-rel">Ease In Out Quint</div>
+          <div class="a-trans position ease-in-out-sine a-pos-rel">Ease In Out Sine</div>
+          <div class="a-trans position ease-in-out-expo a-pos-rel">Ease In Out Expo</div>
+          <div class="a-trans position ease-in-out-circ a-pos-rel">Ease In Out Circ</div>
+          <div class="a-trans position ease-in-out-back a-pos-rel">Ease In Out Back</div>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+
+  </div>
+
+  <script src="node_modules/jquery/dist/jquery.min.js"></script>
+
+  <script>
+  $(function(){
+    var left = 300;
+    setInterval(function(){
+      $('.js-easings > div').css({left: left});
+      left = left === 300 ? 0 : 300;
+    }, 2000);
+  });
+  </script>
+
+
+</body>
+</html>
